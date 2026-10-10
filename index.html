@@ -2,38 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bento Arcade</title>
-   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="top-nav">
      <a href="index.html" class="active">Welcome</a>
-      <a href="games.html">Games</a>
-       <a href="about.html">About</a>
+     <a href="games.html">Games</a>
+     <a href="about.html">About</a>
   </nav>
 
    <main class="welcome-container">
        <header class="hero">
            <div class="hero-content">
                <h1>BENTO ARCADE</h1>
-              <p>A self-contained collection of mini-games. Free to play directly in your browser.</p>
+               <p>A self-contained collection of mini-games. Free to play directly in your browser.</p>
                <a href="games.html" class="enter-btn" id="enterBtn">ENTER ARCADE</a>
            </div>
            
            <div class="hero-visual">
-               <img src="assets/controller2.png" alt="Arcade Controller">
+               <img src="assets/controller.png" alt="Arcade Controller">
            </div>
        </header>
 
        <section class="highlight-box">
-           <h2>Featured Game</h2>
-          <div class="game-wrapper">
-               <h3>Snake</h3>
-               <p>Guide the snake, collect food, and avoid the walls.</p>
-              <a href="games.html#snake" class="play-link">Play Now</a>
-          </div>
+           <h2>Featured Games</h2>
+           <div class="games-list">
+               <div class="game-wrapper">
+                   <h3>Snake</h3>
+                   <p>Guide the snake, collect food, and avoid the walls.</p>
+                   <a href="games.html#snake" class="play-link">Play Now</a>
+               </div>
+               
+               <div class="game-wrapper">
+                   <h3>Brick Breaker</h3>
+                   <p>Bounce a ball with a paddle to clear a formation of blocks.</p>
+                   <a href="games.html#brick" class="play-link">Play Now</a>
+               </div>
+
+               <div class="game-wrapper">
+                   <h3>Reaction</h3>
+                   <p>Respond to targets appearing on screen before the timer ends.</p>
+                   <a href="games.html#reaction" class="play-link">Play Now</a>
+               </div>
+           </div>
        </section>
    </main>
 
