@@ -19,3 +19,32 @@
   font-family: 'Outfit', sans-serif;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 1rem;
+  }
+
+  .games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .games-list article.game-wrapper {
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .games-list article.game-wrapper h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .games-list article.game-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}

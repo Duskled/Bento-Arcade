@@ -76,3 +76,50 @@
 .play-btn:hover {
   background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .page-header {
+    margin: 1.5rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 0px var(--accent-dark);
+  }
+
+  .games-container {
+    padding: 1rem;
+  }
+
+  /* This forces the 3-column grid into a 1-column stack */
+  .game-library {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Centers the stacked cards and prevents them from stretching */
+  .library-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .games-container canvas {
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+  }
+
+  .games-container:has(canvas)::after {
+    content: "KEYBOARD REQUIRED. PLEASE PLAY ON A DESKTOP MACHINE.";
+    display: block;
+    color: var(--accent-primary);
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px dashed var(--accent-primary);
+    background: rgba(230, 43, 43, 0.1);
+  }
+}
