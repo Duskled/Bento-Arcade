@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Bento Arcade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="index.html">Welcome</a>
+        <a href="game.html" class="active">Games</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="games-container">
+        <header class="page-header">
+            <h1>SELECT YOUR GAME</h1>
+        </header>
+
+        <section class="game-library">
+            <article class="library-card">
+                <div class="thumbnail-box">
+                    <img src="assets/snake-thumbnail1.jpg" alt="Snake Game">
+                </div>
+                <div class="game-info">
+                    <h2>SNAKE</h2>
+                    <p>Guide the snake, collect food, and avoid the walls to survive as long as possible.</p>
+                    <a href="#play-snake" class="play-btn">START GAME</a>
+                </div>
+            </article>
+
+            <article class="library-card">
+                <div class="thumbnail-box">
+                    <img src="assets/brick-thumbnail1.jpg" alt="Brick Breaker Game">
+                </div>
+                <div class="game-info">
+                    <h2>BRICK BREAKER</h2>
+                    <p>Bounce a ball with a paddle to clear a formation of blocks. Keep the ball in play.</p>
+                    <a href="#play-brick" class="play-btn">START GAME</a>
+                </div>
+            </article>
+
+            <article class="library-card">
+                <div class="thumbnail-box">
+                    <img src="assets/reaction-thumbnail1.jpg" alt="Reaction Game">
+                </div>
+                <div class="game-info">
+                    <h2>REACTION</h2>
+                    <p>Respond to targets appearing on screen before the timer ends. Test your reflexes.</p>
+                    <a href="#play-reaction" class="play-btn">START GAME</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
