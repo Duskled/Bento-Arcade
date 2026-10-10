@@ -6,6 +6,7 @@
   <title>Bento Arcade</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/game.css">
 </head>
 <body>
   <nav class="top-nav">
@@ -14,7 +15,7 @@
      <a href="about.html">About</a>
   </nav>
 
-   <main class="welcome-container">
+   <main class="welcome-container games-container">
        <header class="hero">
            <div class="hero-content">
                <h1>BENTO ARCADE</h1>
@@ -33,24 +34,27 @@
                <div class="game-wrapper">
                    <h3>Snake</h3>
                    <p>Guide the snake, collect food, and avoid the walls.</p>
-                   <a href="game.html#snake" class="play-link">Play Now</a>
+                   <a href="#play-snake" class="play-link">Play Now</a>
                </div>
                
                <div class="game-wrapper">
                    <h3>Brick Breaker</h3>
                    <p>Bounce a ball with a paddle to clear a formation of blocks.</p>
-                   <a href="game.html#brick" class="play-link">Play Now</a>
+                   <a href="#play-brick" class="play-link">Play Now</a>
                </div>
 
                <div class="game-wrapper">
                    <h3>Reaction</h3>
                    <p>Respond to targets appearing on screen before the timer ends.</p>
-                   <a href="game.html#reaction" class="play-link">Play Now</a>
+                   <a href="#play-reaction" class="play-link">Play Now</a>
                </div>
            </div>
        </section>
    </main>
 
   <script src="js/script.js"></script>
+  <script src="js/snake.js"></script>
+  <script src="js/brick.js"></script>
+  <script src="js/reaction.js"></script>
 </body>
 </html>
