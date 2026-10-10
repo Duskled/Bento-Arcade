@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=VT323&display=swap');
+
+:root {
+  --bg-color: #1a1a24;
+    --accent-purple: #9d4edd;
+  --accent-mint: #00f5d4;
+    --text-main: #f8f9fa;
+}
+
+* {
+    box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+  color: var(--text-main);
+    font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'VT323', monospace;
+    font-weight: normal;
+}
+
+.top-nav {
+    display: flex;
+  justify-content: center;
+    gap: 4rem;
+  padding: 1.5rem 2rem;
+    border-bottom: 2px solid #333344;
+}
+
+.top-nav a {
+  color: #888899;
+    text-decoration: none;
+  font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.top-nav a:hover, .top-nav a.active {
+    color: var(--accent-mint);
+}
+
+.welcome-container {
+  max-width: 1000px;
+    margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.hero {
+    display: flex;
+  align-items: center;
+    justify-content: space-between;
+  margin-bottom: 6rem;
+    gap: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+    text-align: left;
+}
+
+.hero-visual {
+    flex: 1;
+  display: flex;
+    justify-content: center;
+}
+
+.hero-visual img {
+  width: 250px;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+  margin-bottom: 1rem;
+    letter-spacing: 2px;
+  color: var(--accent-mint);
+    line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.2rem;
+    max-width: 450px;
+  margin-bottom: 3rem;
+    color: #bbbbcc;
+}
+
+.enter-btn {
+    display: inline-block;
+  background-color: transparent;
+    color: var(--accent-mint);
+  padding: 1rem 2.5rem;
+    font-family: 'VT323', monospace;
+  font-size: 2rem;
+    text-decoration: none;
+  transition: all 0.2s ease;
+    border: 2px solid var(--accent-mint);
+}
+
+.enter-btn:hover {
+  background-color: var(--accent-mint);
+    color: var(--bg-color);
+  transform: translateY(-2px);
+}
+
+.highlight-box {
+    text-align: left;
+}
+
+.highlight-box h2 {
+  font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  color: var(--accent-purple);
+}
+
+.game-wrapper {
+    background-color: #000;
+  padding: 2.5rem;
+    border: 2px solid var(--accent-mint);
+  box-shadow: 8px 8px 0px var(--accent-purple);
+}
+
+.game-wrapper h3 {
+  font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  text-transform: uppercase;
+    color: #fff;
+}
+
+.game-wrapper p {
+    margin-bottom: 2rem;
+  font-size: 1.2rem;
+    color: #ddd;
+}
+
+.play-link {
+  background-color: var(--accent-purple);
+    color: #fff;
+  text-decoration: none;
+    padding: 12px 24px;
+  font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+  text-transform: uppercase;
+    border: 2px solid #fff;
+  display: inline-block;
+}
+
+.play-link:hover {
+    background-color: var(--accent-mint);
+  color: #000;
+    border-color: #000;
+}
